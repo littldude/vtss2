@@ -212,7 +212,7 @@
         </section>
         <section class="course">
             <div class="container">
-                <h2 class="title">Как проходит II ступень?</h2>
+                <h2 class="title title--left">Как проходит II ступень</h2>
                 <div class="course__inner">
                     <div class="course__inner--item">
                         <p class="text text--medium text--center">Длительность обучения - 6 недель</p>
@@ -428,9 +428,9 @@
                 <h2 class="title title--white" id="buy">Выбирайте подходящий тариф</h2>
                 <div class="buy__inner">
                     <div class="buy__inner--item">
-                        <p class="title--buy text--bold">I пакет</p>
+                        <p class="title--buy text--bold">Базовый</p>
                         <ul class="list list__buy">
-                            <li class="list__item list__item--circle list__item--circle__brown text text--medium">19 уроков</li>
+                            <li class="list__item list__item--circle list__item--circle__brown text text--medium margin">19 уроков</li>
                             <li class="list__item list__item--circle list__item--circle__brown text text--medium">Обучение 6 недель</li>
                             <li class="list__item list__item--circle list__item--circle__brown text text--medium">Методические пособия к каждому уроку</li>
                             <li class="list__item list__item--circle list__item--circle__brown text text--medium">Бонусы за выполнение домашних заданий</li>
@@ -444,15 +444,15 @@
                         </ul>
                         <div class="buy__inner--item__bottom">
                             <p class="subtitle subtitle--overline subtitle--buy"> 20 000 р.</p>
-                            <p class="title title--brown title--price">10 500 р.</p>
+                            <p class="title title--brown title--price">12 500 р.</p>
                             <div class="buy__inner--currency">
                                 <p class="text text--medium text--currency" id="UAH1"></p><p class="text text--medium text--currency" id="EUR1"></p><p class="text text--medium text--currency" id="USD1"></p>
                             </div>
-                            <a class="button button--buy" href="https://kurs-kurkin.ru/site_1step" target="_blank">Купить</a>
+                            <a class="button button--buy" href="https://kurs-kurkin.ru/site_1step" target="_blank" onClick="fbq('track', 'Purchase', {value:12500.00, currency:'RUB', id:'ВТСС2'});">Купить</a>
                         </div>
                     </div>
                     <div class="buy__inner--item">
-                        <p class="title--buy text--bold">II пакет</p>
+                        <p class="title--buy text--bold">С обратной связью</p>
                         <ul class="list list__buy">
                             <li class="list__item list__item--circle list__item--circle__brown text text--medium">19 уроков</li>
                             <li class="list__item list__item--circle list__item--circle__brown text text--medium">обучение 6 недель</li>
@@ -468,15 +468,15 @@
                         </ul>
                         <div class="buy__inner--item__bottom">
                             <p class="subtitle subtitle--overline subtitle--buy"> 45 000 р.</p>
-                            <p class="title title--brown title--price">14 500 р.</p>
+                            <p class="title title--brown title--price">16 500 р.</p>
                             <div class="buy__inner--currency">
                                 <p class="text text--medium text--currency" id="UAH2"></p><p class="text text--medium text--currency" id="EUR2"></p><p class="text text--medium text--currency" id="USD2"></p>
                             </div>
-                            <a class="button button--buy" href="https://kurs-kurkin.ru/site_1step" target="_blank">Купить</a>
+                            <a class="button button--buy" href="https://kurs-kurkin.ru/site_1step" target="_blank" onClick="fbq('track', 'Purchase', {value:16500.00, currency:'RUB', id:'ВТСС2'});">Купить</a>
                         </div>
                     </div>
                     <div class="buy__inner--item">
-                        <p class="title--buy text--bold">III пакет</p>
+                        <p class="title--buy text--bold">Индивидуальное сопровождение</p>
                         <ul class="list list__buy">
                             <li class="list__item list__item--circle list__item--circle__brown text text--medium">19 уроков</li>
                             <li class="list__item list__item--circle list__item--circle__brown text text--medium">обучение 6 недель</li>
@@ -492,11 +492,11 @@
                         </ul>
                         <div class="buy__inner--item__bottom">
                             <p class="subtitle subtitle--overline subtitle--buy"> 80 000 р.</p>
-                            <p class="title title--brown title--price">29 500 р.</p>
+                            <p class="title title--brown title--price">31 500 р.</p>
                             <div class="buy__inner--currency">
                                 <p class="text text--medium text--currency" id="UAH3"></p><p class="text text--medium text--currency" id="EUR3"></p><p class="text text--medium text--currency" id="USD3"></p>
                             </div>
-                            <a class="button button--buy" href="https://kurs-kurkin.ru/site_1step" target="_blank">Купить</a>
+                            <a class="button button--buy" href="https://kurs-kurkin.ru/site_1step" target="_blank" onClick="fbq('track', 'Purchase', {value:31500.00, currency:'RUB', id:'ВТСС2'});">Купить</a>
                         </div>
                     </div>
                 </div>
@@ -581,17 +581,17 @@
 </script>
 <script>
     $.getJSON("https://www.cbr-xml-daily.ru/daily_json.js", function(data) {
-        $('#USD1').html((10500 / data.Valute.USD.Value).toFixed() + '$');
-        $('#EUR1').html((10500 / data.Valute.EUR.Value).toFixed() + '€');
-        $('#UAH1').html((10500 / (data.Valute.UAH.Value / data.Valute.UAH.Nominal)).toFixed() + '₴');
+        $('#USD1').html((12500 / data.Valute.USD.Value).toFixed() + '$');
+        $('#EUR1').html((12500 / data.Valute.EUR.Value).toFixed() + '€');
+        $('#UAH1').html((12500 / (data.Valute.UAH.Value / data.Valute.UAH.Nominal)).toFixed() + '₴');
         
-        $('#USD2').html((14500 / data.Valute.USD.Value).toFixed() + '$');
-        $('#EUR2').html((14500 / data.Valute.EUR.Value).toFixed() + '€');
-        $('#UAH2').html((14500 / (data.Valute.UAH.Value / data.Valute.UAH.Nominal)).toFixed() + '₴');
+        $('#USD2').html((16500 / data.Valute.USD.Value).toFixed() + '$');
+        $('#EUR2').html((16500 / data.Valute.EUR.Value).toFixed() + '€');
+        $('#UAH2').html((16500 / (data.Valute.UAH.Value / data.Valute.UAH.Nominal)).toFixed() + '₴');
     
-        $('#USD3').html((29500 / data.Valute.USD.Value).toFixed() + '$');
-        $('#EUR3').html((29500 / data.Valute.EUR.Value).toFixed() + '€');
-        $('#UAH3').html((29500 / (data.Valute.UAH.Value / data.Valute.UAH.Nominal)).toFixed() + '₴');
+        $('#USD3').html((31500 / data.Valute.USD.Value).toFixed() + '$');
+        $('#EUR3').html((31500 / data.Valute.EUR.Value).toFixed() + '€');
+        $('#UAH3').html((31500 / (data.Valute.UAH.Value / data.Valute.UAH.Nominal)).toFixed() + '₴');
     });
     </script>
 <script>

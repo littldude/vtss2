@@ -49,6 +49,9 @@ button:active,
 button:focus {
     outline: none;
 }
+.margin {
+    margin-top: 27px;
+  }
 .page {
     position: relative;
     display: -webkit-box;
@@ -1641,6 +1644,9 @@ button:focus {
     }
 }
 @media (max-width: 834px) {
+    .margin {
+        margin-top: 0;
+      }
     .header {
         position: -webkit-sticky;
         position: sticky;
